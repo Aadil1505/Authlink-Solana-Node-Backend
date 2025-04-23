@@ -24,8 +24,8 @@ The server integrates with a Solana Anchor program deployed on the devnet.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd nfc-product-tracker-server
+git clone https://github.com/Aadil1505/Authlink-Solana-Node-Backend.git
+cd authlink-solana-node-backend
 ```
 
 ### 2. Install Dependencies
@@ -72,23 +72,17 @@ Create a `.env` file in the project root:
 
 ```
 PORT=3001
-PROGRAM_ID=4CMSpzSRhQiCyYhNHMM46y32Tic6LC4f6XB4zM1JGrdB
+PROGRAM_ID=**************************
 SOLANA_NETWORK=https://api.devnet.solana.com
-IDL_PATH=./target/idl/nfc_product_tracker.json
+IDL_PATH=./idl.json
 KEYPAIR_FILE=./keypair.json
 ```
 
-Make sure to replace `PROGRAM_ID` with your actual deployed program ID if different.
+Make sure to replace `PROGRAM_ID` with your actual deployed program ID.
 
 ### 7. Prepare the IDL File
 
-Create the directory structure and ensure your IDL file is available:
-
-```bash
-mkdir -p target/idl
-```
-
-Copy your NFC product tracker program's IDL file to `target/idl/nfc_product_tracker.json`. If you've built your Anchor program, this file should be available in its target directory.
+Copy your Solana program's IDL file to `idl.json`. If you've built your Anchor program, this file should be available in its target directory.
 
 ### 8. Start the Server
 
