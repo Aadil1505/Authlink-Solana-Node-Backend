@@ -1,4 +1,4 @@
-# NFC Product Tracker Backend
+# Authlink Solana Backend
 
 A Node.js API server that interacts with a Solana blockchain smart contract to register and verify products using NFC technology.
 
